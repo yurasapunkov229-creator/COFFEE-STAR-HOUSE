@@ -361,7 +361,6 @@ if __name__ == '__main__':
                if not (BASE / 'templates' / f).exists()]
     if missing:
         print(f"❌ Нет файлов в templates/: {', '.join(missing)}")
-        input("Нажмите Enter...")
         sys.exit(1)
 
     try:
